@@ -11,8 +11,17 @@ namespace Fiap.UI.HelloWorld
             Carro carro = new Carro();
             //Atribuir um código ao carro
             carro.Codigo = 10;
+            carro.Tipo = TipoCarro.Hatch;
             //Exibir o código do carro
-            Console.WriteLine(carro.Codigo);            
+            Console.WriteLine(carro.Codigo);
+
+            //Intanciar um carro 2
+            Carro carro2 = new Carro()
+            {
+                Portas = 4,
+                Valor = 100000
+            };
+
         }
     }
 }
